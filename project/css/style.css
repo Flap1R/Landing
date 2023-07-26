@@ -56,7 +56,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 .header__logo {
     display: flex;
-    width: 182.5px;
     height: 66.359px;
     padding: 15px 11.5px 15.359px 11px;
     justify-content: center;
@@ -71,8 +70,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     padding: 22px 34.88px 23.36px 11.375px;
     align-items: flex-start;
     gap: 22px;
-    flex-shrink: 0;
-    margin-right: 245px;
 }
 
 .menu__link {
@@ -605,13 +602,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 @media (max-width: 768px) {
-    *{
-        max-width: 768px;
+    .shop__item-scroll {
+        width: 768px;
+        display: inline-flex;
+        padding-bottom: 0px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 23.007px;
     }
-    .wrapper {
-        max-width: 768px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+
+    .brands-logo {
+        padding: 20px 40px;
     }
 }
